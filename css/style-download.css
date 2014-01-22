@@ -1,0 +1,123 @@
+#downFrame{
+	height: auto;
+	width: auto;
+    padding: 0px;	
+	border: 0px;
+	margin: 20px auto;
+}
+
+.link_download  img, .file_download  img{
+    height: 40px;
+	width: 40px;
+	margin: 0px 0px 0px 5px;
+	border: 1px solid #888 ;
+	background-color: #555;
+	float: left; 
+}
+
+#link_download a, .count_download{
+    font-weight: bold;
+	display: block;
+	height: 42px;
+	line-height: 40px;
+	color: #DCC;
+	text-indent: 20px;
+	text-decoration: none;
+	font-family: arial, verdana, sans-serif;
+	text-align: left;
+	cursor: pointer;
+	font-size: 14px;
+	padding: 0px;
+	border: 0px;
+	margin: 0px;	
+}
+
+#link_download a{
+	width: auto;	
+}
+
+#link_download a:hover{
+	color: #FFF;
+	background-color: #090;	
+}
+
+.count_download{
+    background-color: none;
+    float: right;
+	margin-right: 20px;
+	width: auto;
+	color: #FFF;
+}
+
+#link_download{
+	height: 42px;
+	width: auto;
+	background: url(../images/lgreen-bg.png) repeat;	
+    padding: 0px;	
+	border: solid #fff 1px;
+	margin: 5px 20px;
+}
+
+#showFile{
+	background-color: none;
+	width: auto;
+	float: left;
+	margin: 10px;
+	text-align: center;
+	border: 1px solid #ccc;	
+}
+
+#showFileFrame{
+	background-color: none;
+	margin: 0px 40px;
+	height: auto;
+}
+
+.file_show img{
+    height: 60px;
+	width: 60px;
+	margin: 10px;
+	background-color: none;
+}
+
+#showFile a {
+    width: 100px;
+    display: block;
+	padding: 0px 10px 10px 10px;
+	background:url(../images/purple-bg.png);
+	text-decoration: none;
+	font-weight: bold;
+	color: #ccc;
+}
+
+#showFile a:hover{
+	background-color: green;
+	background:url(../images/lgreen-bg.png);
+	color: white;
+}
+
+#deleteFile{
+}
+
+#deleteFile a {
+    border-top:  1px solid #ccc;
+    padding-top: 6px;
+	line-height: 10px;
+	background:url(../images/red-bg.png);
+    display: block;
+	text-decoration: none;
+	font-weight: bold;
+	color: #444;
+}
+
+#deleteFile a:hover{
+	background-image:none;
+	background-color: red;	
+	color: white;
+}
+
+
+#log-status p{
+    color: red;
+}
+

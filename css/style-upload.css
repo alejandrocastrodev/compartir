@@ -1,0 +1,137 @@
+
+#sharedbody {
+	height: auto;
+	width: 788px;
+    padding: 0px; 
+	border: 0px;
+	margin: 20px auto;
+}
+
+#leveler{
+    text-align: left;
+	height: auto;
+	width: 640px;
+    padding: 0px; 
+	border: 0px;
+	margin: 0px auto;
+}
+
+#sharedFrame {
+	height: auto;
+	width: 668px;
+	margin: 20px auto;
+    padding: 0px; 
+	border: 0px;
+	text-align: center;
+}
+
+#uploadForm {
+	background: url(../images/purple-bg.png) repeat;
+	height: auto;
+	width: 778px;
+	margin: 20px auto;
+    padding-top: 20px; 
+	border: 1px solid blue;	
+	text-align: center;
+}
+
+
+#uploadForm input {
+    clear: none;
+}
+
+#uploadForm p{
+	margin: 0px;
+    padding: 0px; 
+	border: 0px;
+    line-height:38px;
+	text-decoration:none;
+    font-weight: bold;
+	font-family: arial, verdana, sans-serif;
+	font-size: 14px;
+	color: #fff;
+}
+
+#uploadForm a{
+    float: right;
+    font-weight: bold;
+	display: block;
+	height: 30px;
+	width: 129px;	
+	line-height: 30px;
+	color: #BCBDBD;
+	text-decoration: none;
+	font-family: arial, verdana, sans-serif;
+	text-align: center;
+	cursor: pointer;
+	font-size: 14px;
+	margin: 5px 10px;
+	padding: 0px;
+	border: 1px solid blue;	
+}
+
+#uploadForm a:hover{
+    background-color: #515;
+	color:#fff;
+}
+
+#hiddenFileInput{
+	height: 0px;
+	width: 0px;
+	overflow: hidden;
+}
+
+.sharedFileN  a, .sharedFileY  a{
+	height: 42px;
+	width: 200px;
+    line-height:38px;
+	text-decoration:none;
+	font-family: arial, verdana, sans-serif;
+	font-size: 14px;
+	margin: 6px 5px;
+    padding: 0px; 
+	float: left;
+}
+
+.sharedFileN  a{
+    border: 1px solid #f99;
+	background: url(../images/red-bg.png) repeat;
+	color: #f99;
+} 
+.sharedFileY  a{
+    border: 1px solid #0f0;
+	background: url(../images/lgreen-bg.png) repeat;
+	color: #0f0;
+}
+
+.sharedFileN  a:hover {
+    border: 1px solid #fff;
+    background-color: red;
+	color: #fff;
+}
+.sharedFileY  a:hover {
+    border: 1px solid #dfd;
+    background-color: green;
+	color: #400;
+}
+
+.sharedFileN  img, .sharedFileY  img{
+    height: 40px;
+	width: 40px;
+	margin: 0px 0px 0px 5px;
+	border: 1px solid #888 ;
+	background-color: #555;
+	float: left; 
+}
+
+#foot-form{
+    clear: both;
+	height: 30px;
+	width: 840px;
+    padding: 0px; 
+	border: 0px;
+	margin: 0px auto;
+}
+
+
+

@@ -1,0 +1,527 @@
+-- phpMyAdmin SQL Dump
+-- version 2.10.3
+-- http://www.phpmyadmin.net
+-- 
+-- Servidor: localhost
+-- Tiempo de generación: 20-01-2014 a las 12:13:25
+-- Versión del servidor: 6.0.4
+-- Versión de PHP: 6.0.0-dev
+
+SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
+
+-- 
+-- Base de datos: `mycloud`
+-- 
+
+-- --------------------------------------------------------
+
+-- 
+-- Estructura de tabla para la tabla `chat1`
+-- 
+
+CREATE TABLE `chat1` (
+  `id_linea` int(5) NOT NULL,
+  `mensaje` text COLLATE utf8_spanish_ci NOT NULL,
+  `user_id` int(3) NOT NULL,
+  `nombre_chat` varchar(10) COLLATE utf8_spanish_ci NOT NULL,
+  `fecha_hora` datetime NOT NULL,
+  `id_mje_actual` int(4) NOT NULL,
+  PRIMARY KEY (`id_linea`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
+
+-- 
+-- Volcar la base de datos para la tabla `chat1`
+-- 
+
+INSERT INTO `chat1` VALUES (21, 'pedazo de gato', 2, 'Ale', '2013-08-15 09:08:07', 0);
+INSERT INTO `chat1` VALUES (20, 'marcos dice que ya le llego', 5, 'PameB', '2013-08-01 11:41:14', 0);
+INSERT INTO `chat1` VALUES (19, 'Sebas fijate si estas estan en tu listado, ', 5, 'PameB', '2013-08-01 11:10:07', 0);
+INSERT INTO `chat1` VALUES (18, 'Hola Marcos. Tendr&iacute;a que ver con alg&uacute;n colega exclusivo de Claro. Yo tengo algo de Personal, pero no consigo mas el Razr com&uacute;n, tengo en mi negocio el Razr D1 TV aunque creo que justamente hoy lo vendo. En la lista de Personal figura el Motorola Defy a $ 1.400 poara usar con prepago. Habr&iacute;a que invertor unos $ 150 mas en liberarlo para poder usar con Claro, aunque probablemente all&aacute; se libere por menos plata. Pero figura como discont&iacute;nuo, as&iacute; que hay que preguntar si queda alguno disponible. Saludos a Helena y Pr&iacute;.', 12, 'Marcos', '2013-07-26 10:37:25', 0);
+INSERT INTO `chat1` VALUES (16, 'Sebas, fue ajuares junio', 12, 'Marcos', '2013-07-18 08:52:34', 0);
+INSERT INTO `chat1` VALUES (17, 'BICHIIII', 12, 'Marcos', '2013-07-26 10:37:20', 0);
+INSERT INTO `chat1` VALUES (15, 'Avisenle a Ariel que tiene usuario', 39, 'Ari', '2013-06-06 12:01:54', 0);
+INSERT INTO `chat1` VALUES (14, 'Fue bestia en 5 voy..', 12, 'Marcos', '2013-05-21 09:26:06', 0);
+INSERT INTO `chat1` VALUES (13, 'http://youtube.com/watch?v=wpGkQzzV7Ck', 7, 'EugeB', '2013-05-07 09:41:33', 0);
+INSERT INTO `chat1` VALUES (12, 'hola', 33, 'Diego', '2013-04-09 09:47:51', 0);
+INSERT INTO `chat1` VALUES (42, 'sebas no llego nada, el ultimo es del 23/10', 5, 'PameB', '2012-10-31 13:20:02', 0);
+INSERT INTO `chat1` VALUES (43, 'mandalo', 9, 'Don H', '2012-11-13 12:08:08', 0);
+INSERT INTO `chat1` VALUES (44, 'sebi solo esta esa', 5, 'PameB', '2012-11-22 13:27:06', 0);
+INSERT INTO `chat1` VALUES (45, 'Pri pasame esos archivos asi los imprimo y nos vamos......', 12, 'Marcos', '2012-11-28 15:40:32', 0);
+INSERT INTO `chat1` VALUES (46, 'desesperadooooo, ja ja ja', 2, 'Ale', '2012-11-30 12:41:37', 0);
+INSERT INTO `chat1` VALUES (47, 'ale gatooo', 9, 'Don H', '2012-12-04 11:05:47', 0);
+INSERT INTO `chat1` VALUES (48, 'que archivos&iquest;&iquest;', 27, 'Pri', '2012-12-04 11:12:08', 0);
+INSERT INTO `chat1` VALUES (49, 'NO HAY INTERNECCCCCCCCCCCCCCCCC....', 12, 'Marcos', '2012-12-13 12:31:57', 0);
+INSERT INTO `chat1` VALUES (0, 'SEBAS PASAME EL CONTROL DE ASISTENCIA', 12, 'Marcos', '2012-12-19 11:58:38', 0);
+INSERT INTO `chat1` VALUES (1, 'sebas ya te pase', 5, 'PameB', '2012-12-19 12:12:02', 0);
+INSERT INTO `chat1` VALUES (11, 'te llego todo gil???', 12, 'Marcos', '2013-03-26 11:50:09', 0);
+INSERT INTO `chat1` VALUES (10, 'no llego', 5, 'PameB', '2013-03-01 14:40:17', 0);
+INSERT INTO `chat1` VALUES (9, 'fijate si lo podes imprimir en la misma hoja pame', 1, 'Seba', '2013-03-01 14:39:28', 0);
+INSERT INTO `chat1` VALUES (8, 'Sebas cuando tengas el cruse de las reno. de febrero  paselo. gracias', 12, 'Marcos', '2013-02-06 10:11:18', 0);
+INSERT INTO `chat1` VALUES (7, 'te mande una nota hay que agregarle el n&ordm;', 10, 'Loree', '2013-01-24 10:31:30', 0);
+INSERT INTO `chat1` VALUES (6, 'pame', 10, 'Loree', '2013-01-24 10:30:37', 0);
+INSERT INTO `chat1` VALUES (4, 'ahi te mande nov 2009 gi!', 1, 'Seba', '2013-01-07 13:01:39', 0);
+INSERT INTO `chat1` VALUES (5, 'chicos, les mando el control de asistencia actualizado!!!! Saludos', 1, 'Seba', '2013-01-11 14:38:16', 0);
+INSERT INTO `chat1` VALUES (3, 'sebastian', 10, 'Loree', '2012-12-20 12:01:36', 0);
+INSERT INTO `chat1` VALUES (2, 'ahi te mande el control de asistencia 20/12', 10, 'Loree', '2012-12-20 12:00:53', 0);
+INSERT INTO `chat1` VALUES (30, 'Sebas cuando estes pasame el archivo', 12, 'Marcos', '2012-10-09 10:05:08', 0);
+INSERT INTO `chat1` VALUES (41, 'sebi te pase el archivo de correccion', 5, 'PameB', '2012-10-24 10:17:44', 0);
+INSERT INTO `chat1` VALUES (40, 'http://www.conozcasucelular.com/reportajes/1291256/cmo_hacer_un_hard_reset_o_borrado_general_en_el_lg_optimus_me_p350.html', 12, 'Marcos', '2012-10-23 10:44:12', 0);
+INSERT INTO `chat1` VALUES (39, 'sebas, va de nuevo.', 12, 'Marcos', '2012-10-10 09:34:22', 0);
+INSERT INTO `chat1` VALUES (38, 'pame mando datos 2012 actualizado', 10, 'Loree', '2012-10-09 16:01:00', 0);
+INSERT INTO `chat1` VALUES (37, 'Sebas te paso el comtrolconlo que pase', 12, 'Marcos', '2012-10-09 13:16:37', 0);
+INSERT INTO `chat1` VALUES (36, 'OK', 1, 'Seba', '2012-10-09 10:06:12', 0);
+INSERT INTO `chat1` VALUES (35, 'llego', 12, 'Marcos', '2012-10-09 10:05:51', 0);
+INSERT INTO `chat1` VALUES (34, 'esta ', 12, 'Marcos', '2012-10-09 10:05:48', 0);
+INSERT INTO `chat1` VALUES (33, 'no', 12, 'Marcos', '2012-10-09 10:05:32', 0);
+INSERT INTO `chat1` VALUES (32, 'LLEGO?', 1, 'Seba', '2012-10-09 10:05:26', 0);
+INSERT INTO `chat1` VALUES (31, 'AHI TE LO MANDE', 1, 'Seba', '2012-10-09 10:05:24', 0);
+INSERT INTO `chat1` VALUES (22, 'Chicos recuerdenle a hora bajar el archivo de ajuares, gracias', 5, 'PameB', '2013-08-23 14:59:40', 0);
+INSERT INTO `chat1` VALUES (23, 'Ary ,http://www.empleos.clarin.com/empleo/396973-Operarios para Laboratorio Zona Bernal -  Quilmes', 12, 'Marcos', '2013-11-19 12:29:47', 0);
+INSERT INTO `chat1` VALUES (24, 'q ondaaaa', 9, 'Don H', '2013-12-04 10:47:42', 0);
+INSERT INTO `chat1` VALUES (25, 'holaaaa', 9, 'Don H', '2014-01-06 10:37:47', 0);
+INSERT INTO `chat1` VALUES (26, 'que velocidad', 3, 'Jime', '2012-10-01 09:03:15', 0);
+INSERT INTO `chat1` VALUES (27, 'Holaa', 27, 'Pri', '2012-10-02 12:22:07', 0);
+INSERT INTO `chat1` VALUES (28, 'lore si estas mandas el control de asistencia de tv', 5, 'PameB', '2012-10-03 12:23:35', 0);
+INSERT INTO `chat1` VALUES (29, 'Clau ya te pase el archivo de ajuares, cualquier cosa avisame', 5, 'PameB', '2012-10-04 08:52:01', 0);
+
+-- --------------------------------------------------------
+
+-- 
+-- Estructura de tabla para la tabla `chat_control`
+-- 
+
+CREATE TABLE `chat_control` (
+  `id_chat` varchar(16) COLLATE utf8_spanish_ci NOT NULL,
+  `id_mje_actual` int(2) NOT NULL,
+  `max_lineas` int(2) NOT NULL,
+  `fecha_hora` datetime NOT NULL,
+  `id_fch_hora` int(4) NOT NULL,
+  PRIMARY KEY (`id_chat`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
+
+-- 
+-- Volcar la base de datos para la tabla `chat_control`
+-- 
+
+INSERT INTO `chat_control` VALUES ('chat1', 25, 50, '2014-01-06 10:37:47', 0);
+
+-- --------------------------------------------------------
+
+-- 
+-- Estructura de tabla para la tabla `files`
+-- 
+
+CREATE TABLE `files` (
+  `file_id` int(6) NOT NULL AUTO_INCREMENT,
+  `file_name` varchar(80) COLLATE utf8_spanish_ci NOT NULL,
+  `file_code` varchar(40) COLLATE utf8_spanish_ci NOT NULL,
+  `file_root_id` int(3) NOT NULL,
+  `file_date` varchar(8) COLLATE utf8_spanish_ci NOT NULL,
+  `file_hour` varchar(10) COLLATE utf8_spanish_ci NOT NULL,
+  `file_size` int(20) NOT NULL,
+  `file_ext` varchar(6) COLLATE utf8_spanish_ci NOT NULL,
+  PRIMARY KEY (`file_id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci AUTO_INCREMENT=1992 ;
+
+-- 
+-- Volcar la base de datos para la tabla `files`
+-- 
+
+INSERT INTO `files` VALUES (1646, 'SolicitudVale.pdf', 'i0p7o24qc35k62pubph5a1l427725dz5rzx3i021', 29, '01/03/20', '12:42:25', 23346, 'pdf');
+INSERT INTO `files` VALUES (1951, 'PADRON 28-11-2013.xls', '4909mal6k0eq06ype65j4v7679hf7qyuetkdw0l0', 39, '28/11/20', '08:50:33', 7965696, 'xls');
+INSERT INTO `files` VALUES (1628, 'Quilmes_Ene.xls', 'r4rc4kc128918ly69avmh334r0hfvb355zj2m6z0', 6, '13/02/20', '08:10:24', 3614208, 'xls');
+INSERT INTO `files` VALUES (1732, 'Datos TV 2013 mod.xls', 'd4pv4z3360y45n0tvcnainz0752o8adi35hcc95p', 36, '15/05/20', '12:36:07', 504832, 'xls');
+INSERT INTO `files` VALUES (1824, 'Tarjeta 4190 8000 1196 2631.bmp', 'oveaf9e70i17r79r901gpwrg3ad4ze352ebiv7a5', 39, '31/07/20', '11:41:10', 3133494, 'bmp');
+INSERT INTO `files` VALUES (1942, 'ASIGNACION UNIVERSAL.pdf', '87h4e6g5732jer06hj4f8e1t689aheluqw5v4qz8', 12, '19/11/20', '10:01:10', 469843, 'pdf');
+INSERT INTO `files` VALUES (1102, 'Quilmes_Altas_Sep.xls', 'm77tzuf7223f10w728514iffm2n5bn2097f4w704', 7, '25/09/20', '11:17:48', 55296, 'xls');
+INSERT INTO `files` VALUES (1931, 'ASIGNACION UNIVERSAL.pdf', '3t79x862nf458476635hts3h82ch6rl1yvd543z1', 2, '05/11/20', '09:47:43', 469843, 'pdf');
+INSERT INTO `files` VALUES (171, 'Anexo I y II LOBERIA MEJOR VIVIR 2.xls', 'wba48t9d4n92n17or39wtxov4n12pz4y803oa4mx', 14, '24/11/20', '11:56:05', 78848, 'xls');
+INSERT INTO `files` VALUES (448, 'CASOS URGENTES Y SALIDAS.xls', 'g25v4ft7j290qc9q0o51ji34321179702288r824', 21, '17/01/20', '11:15:39', 198144, 'xls');
+INSERT INTO `files` VALUES (436, 'CASOS URGENTES Y SALIDAS.xls', 'gk0meht63x0x5zvz5hsr0n5ru497px77e5u2g1rb', 21, '17/01/20', '09:52:26', 198144, 'xls');
+INSERT INTO `files` VALUES (79, 'MATERIALES PENDIENTES Y ENTREGADOS 20111115.xls', 'y5h6h4x6qn47sm55i109dgq79o0mn7e0oqq1892q', 18, '15/11/20', '11:08:57', 862208, 'xls');
+INSERT INTO `files` VALUES (1138, 'Fuck-defree-booteable_premium.rar', 'tp3363s38n16094a92k131r995c9p1309shyv9oj', 2, '28/09/20', '09:42:04', 55255643, 'rar');
+INSERT INTO `files` VALUES (1984, 'Diciembre 2013.xls', 'xw81k7baur0874441sfk6hxo9y369kg42kk67spz', 9, '06/01/20', '09:37:08', 2798080, 'xls');
+INSERT INTO `files` VALUES (1983, 'Diciembre 2013.xls', '349v2z837663r1hns246r6xngd3vgm5jkki8l630', 5, '06/01/20', '08:56:28', 3302400, 'xls');
+INSERT INTO `files` VALUES (1441, 'Benitez Flavia.doc', '1q384ki04191bm8uw39t6387124n1v3wl84570i2', 29, '11/12/20', '10:02:21', 121344, 'doc');
+INSERT INTO `files` VALUES (433, 'GATO NEGRO.jpg', 'h22gqm9460gv07v263l4248bm089d71vz24lt3po', 3, '17/01/20', '09:46:57', 146265, 'jpg');
+INSERT INTO `files` VALUES (104, 'SEÑORES PADRES.doc', 'yk0u5n2c3m41ab5730f5f1d2fb1vdpyv7nh1uo9j', 18, '16/11/20', '15:00:39', 24064, 'doc');
+INSERT INTO `files` VALUES (1649, 'SOLICITUD_BRANCA.pdf', 'xyrs5q65g54363w0ou62s7p8vu3ksvu70n57664z', 29, '01/03/20', '13:09:50', 28837, 'pdf');
+INSERT INTO `files` VALUES (137, 'plantillas web.txt', '1269j79ctb3a0z5kahgb4s26093b5w297dsa35md', 0, '18/11/20', '11:59:32', 886, 'txt');
+INSERT INTO `files` VALUES (148, 'agenda.xls', 'c75bfngz37kse17b5px7h7t49h00l0kf48r77h63', 18, '21/11/20', '09:54:10', 23040, 'xls');
+INSERT INTO `files` VALUES (1353, 'Encuesta Social - Campos, Daniela.doc', '37jj47ifzp0g6a22e78y3p3c92r4655v31q86w7k', 27, '29/11/20', '12:56:32', 118784, 'doc');
+INSERT INTO `files` VALUES (1981, 'Quilmes_Altas_Ene.xls', '767g6u934646tbvwltyse4n9tx2399b6l1mpbmky', 5, '03/01/20', '11:00:45', 101888, 'xls');
+INSERT INTO `files` VALUES (149, 'agenda.xls', 'afzt0ilt6481528olm3809x6h3j8t5me21ahm96z', 18, '21/11/20', '09:55:06', 23040, 'xls');
+INSERT INTO `files` VALUES (150, 'agenda.xls', '6e4yq56g25v4ft7j290qc9q0o51ji34321179702', 18, '21/11/20', '09:56:18', 23040, 'xls');
+INSERT INTO `files` VALUES (1887, 'Libro1.xls', 'br8i37fi395879653m317425842jk2y30rf3o4sc', 12, '18/09/20', '09:04:42', 14336, 'xls');
+INSERT INTO `files` VALUES (1668, 'Cuestionario alumnos 2013.doc', 'u7960n1k07956h285u7an0d82729q7s227ki940c', 29, '26/03/20', '09:15:47', 65536, 'doc');
+INSERT INTO `files` VALUES (1243, 'Cardama Hector.doc', '20pxp7x2v100t9rd07q2pm600v532n88ti54n036', 29, '06/11/20', '14:11:52', 110592, 'doc');
+INSERT INTO `files` VALUES (1101, 'Quilmes_Altas_Sep.xls', 'vnx35w70nf8n5i8qkx5cvs67o5weicc2xez704hh', 7, '25/09/20', '11:17:08', 55296, 'xls');
+INSERT INTO `files` VALUES (230, 'KK(jwgkvsq.vmx removal).exe', 'xaz5j11u8tqxc53q8jxr98cu087twz522c1e894d', 2, '06/12/20', '11:10:44', 178442, 'exe');
+INSERT INTO `files` VALUES (1982, 'Quilmes_Altas_Feb.xls', '45o44d6vva4v28s2ooe8k763p27m86jz0y1677yg', 5, '03/01/20', '11:01:09', 187392, 'xls');
+INSERT INTO `files` VALUES (441, 'ADMISIONES URGENTES.xls', '4e9e8vb7u8yzw0l79fg8s91z9cx83kghu58y94q6', 21, '17/01/20', '10:24:51', 1162240, 'xls');
+INSERT INTO `files` VALUES (345, 'Exposicion.doc', '5lowp9yvgut8eotv106j91hhi3hi96n2rq67fdm6', 25, '22/12/20', '12:21:57', 111104, 'doc');
+INSERT INTO `files` VALUES (1448, 'galvan alejandra.doc', '3m1fr9w2zhxp0hb9ms01egq7vs56eu56a2kjbyvp', 27, '12/12/20', '11:59:01', 83456, 'doc');
+INSERT INTO `files` VALUES (377, 'Planilla para envio de Galpon 27-6-2011.xls', 'ty67z76ny1t33arwaa195x0ix49sr37x6ldoo485', 18, '05/01/20', '12:49:57', 40960, 'xls');
+INSERT INTO `files` VALUES (1647, 'CurriculumVitae.pdf', 'plo5gh859poijcl7ioflptp283kx8f3dlaf7h57j', 29, '01/03/20', '12:46:21', 77566, 'pdf');
+INSERT INTO `files` VALUES (1648, 'Abstract Canarias2.doc', '3dtwiy2feg3youyt2i64zpit537kqjm2a34wm131', 29, '01/03/20', '12:56:48', 28672, 'doc');
+INSERT INTO `files` VALUES (1579, 'es_office_professional_plus_2010_x86_volume_license.part01.rar', '114d3h9r0r8h0a870cw99r5k3n6z03x4wxdo4ya0', 32, '25/01/20', '09:26:32', 52428800, 'rar');
+INSERT INTO `files` VALUES (1354, 'ENCUESTA SOCIAL- SOLIS.doc', 'hj611md8v9812lob980d97c1tb482lt0c685clmw', 27, '29/11/20', '12:56:36', 123392, 'doc');
+INSERT INTO `files` VALUES (1592, 'es_office_professional_plus_2010_x86_volume_license.part14.rar', 'gqq3800kn6im8d2j7348w9w5z71jv5zz1y2177p6', 32, '25/01/20', '09:28:37', 29605688, 'rar');
+INSERT INTO `files` VALUES (1593, 'pass activar 2010.rar', '28u1676l44w3lm154737g818nti4baqi54u288ob', 32, '25/01/20', '09:28:49', 2544516, 'rar');
+INSERT INTO `files` VALUES (1839, 'Quilmes_Jul.xls', '73kxv32r2j1is0bp93q27vqa928qc5980fsmq192', 9, '15/08/20', '07:33:04', 3749376, 'xls');
+INSERT INTO `files` VALUES (1582, 'es_office_professional_plus_2010_x86_volume_license.part04.rar', '00qm23tnrczw1zc2i8u4z3w2xh0h84dk4l83qe8u', 32, '25/01/20', '09:27:11', 52428800, 'rar');
+INSERT INTO `files` VALUES (1583, 'es_office_professional_plus_2010_x86_volume_license.part05.rar', 'a3ao3rbk597b18tgzh878v8hl3465mmov057ewo0', 32, '25/01/20', '09:27:21', 52428800, 'rar');
+INSERT INTO `files` VALUES (1478, 'FRANCO Ana asu.doc', '9d7mc794q6z1j7qi0upv5l6345op5sb45vw535uq', 27, '17/12/20', '09:03:50', 86528, 'doc');
+INSERT INTO `files` VALUES (504, 'EverestUlt5.3_www.descargasz.uni.cc.rar', '61t52g98b229tv3ldu9gzw80yuw58ir5mh0wni61', 2, '08/02/20', '11:15:29', 10391212, 'rar');
+INSERT INTO `files` VALUES (1365, 'Perotti, Jose.doc', '8qk3czejja89l5h903090e09a6048s631964v28i', 27, '04/12/20', '09:22:11', 110080, 'doc');
+INSERT INTO `files` VALUES (1525, 'listado nacion 27 de dic.doc', '95153xq2gr0tip9734gc0xq42u8nr7q1bs7bd2z9', 27, '03/01/20', '09:56:51', 52736, 'doc');
+INSERT INTO `files` VALUES (1009, 'control de asistencia compu Lore 1.xls', 'w2zq3e2058764a11qmhg9z8702s4ta4aubz29dyw', 7, '03/09/20', '09:52:22', 558592, 'xls');
+INSERT INTO `files` VALUES (1439, 'Vallejos Patricia.doc', 'k06ml33yhv8hub736v986y1l4ccay0n27o19s3ww', 27, '11/12/20', '09:42:09', 83968, 'doc');
+INSERT INTO `files` VALUES (529, 'chat.rar', '8161kuys60ji36p73m46ge5uw58z929z2e6l4962', 2, '29/02/20', '11:57:10', 994382, 'rar');
+INSERT INTO `files` VALUES (1481, 'Romero Karina.doc', 'w3o944h19y2cen2ms9b0kxj602992656yw9psr8m', 30, '17/12/20', '10:09:15', 126464, 'doc');
+INSERT INTO `files` VALUES (1666, 'Altas Plan Nacional de Seguridad Alimentaria - 1er envío - 12-03-13.xls', 'zrh6yt4gux4w2881c3mu011r805mh74y0y5wzm79', 29, '21/03/20', '09:21:26', 264704, 'xls');
+INSERT INTO `files` VALUES (1669, 'TP N º 1.doc', '0064tu9103657l6hn8sg1hl1lor70317w56x46wa', 29, '26/03/20', '09:15:58', 33792, 'doc');
+INSERT INTO `files` VALUES (1665, 'Altas Plan Nacional de Seguridad Alimentaria - 1er envío - 12-03-13.xls', 'nh2v67d36i7w26u0gp1q384ki04191bm8uw39t63', 29, '21/03/20', '09:21:13', 264704, 'xls');
+INSERT INTO `files` VALUES (933, 'CHEQUEADO TARJETAS SIN RETIRAR NOVIEMBRE.xlsx', 'b7bw41qx679wmbt4697501vv236za4w8e0314x8p', 7, '03/08/20', '09:04:58', 29006, 'xlsx');
+INSERT INTO `files` VALUES (1946, 'Quilmes_Jub.xls', '8br1hnf6p3aw5ew59xl4415jw8z99okz4cpga2hl', 40, '26/11/20', '10:40:15', 320000, 'xls');
+INSERT INTO `files` VALUES (1587, 'es_office_professional_plus_2010_x86_volume_license.part09.rar', 'd07q2pm600v532n88ti54n0361iwl5a94i8j4hlv', 32, '25/01/20', '09:27:57', 52428800, 'rar');
+INSERT INTO `files` VALUES (1864, 'REVERSO.bmp', '8q4v5756idn596gmgw40xszb6v4g29r3oz3d1533', 39, '02/09/20', '10:14:25', 3133494, 'bmp');
+INSERT INTO `files` VALUES (1865, 'REVERSO.bmp', '01qcnccj36tbhkk9ch875ys2ie81gs9fa38fl62x', 39, '02/09/20', '10:18:28', 3133494, 'bmp');
+INSERT INTO `files` VALUES (1953, 'Datos TV 2013 CORREGIDO 29-10-13.xls', 'n5xe8696n92b4ar2g78y7868s0s780v4xt7oqufy', 7, '28/11/20', '14:18:05', 1079808, 'xls');
+INSERT INTO `files` VALUES (1803, 'Agosto 2013.xls', '17coo0k9zhc60dvj6348l7pv101cra63oidls810', 36, '16/07/20', '13:30:48', 14848, 'xls');
+INSERT INTO `files` VALUES (1580, 'es_office_professional_plus_2010_x86_volume_license.part02.rar', 'o23505804ogcu0j568wb755la0g4a0ow533j4ngt', 32, '25/01/20', '09:26:49', 52428800, 'rar');
+INSERT INTO `files` VALUES (1586, 'es_office_professional_plus_2010_x86_volume_license.part08.rar', 'h9m6e429i3f4llzailkk6d13h20pxp7x2v100t9r', 32, '25/01/20', '09:27:47', 52428800, 'rar');
+INSERT INTO `files` VALUES (1349, 'Modelo de Negativa (con asistido y no podra asistir).doc', 'd94j826t65hoio1no19j1yl8u74uh468jp77ta63', 27, '29/11/20', '12:10:48', 69120, 'doc');
+INSERT INTO `files` VALUES (934, 'tarj con mov nov.png', 'q8dz4q8b5ywo8pv2ygo8r7t1u728a1ru1n86vt51', 7, '03/08/20', '09:06:01', 136149, 'png');
+INSERT INTO `files` VALUES (1479, '5 casos vivienda diciembre.doc', '057pb7x88978c8x460f31oji3yd1c0glcnn0bf67', 27, '17/12/20', '09:56:20', 25600, 'doc');
+INSERT INTO `files` VALUES (1480, 'diarte.doc', 'ej49b4q23hrvttej0nz5b4vhk1k2y4o030y64tjs', 30, '17/12/20', '10:08:56', 124928, 'doc');
+INSERT INTO `files` VALUES (1830, 'configuracion.txt', 'fs26047f2gnpkt1qlt409zfn81198eaxnq5g83o7', 2, '07/08/20', '10:15:55', 342, 'txt');
+INSERT INTO `files` VALUES (1485, 'Tarca lorena.doc', '6583f5b004l691uwri7497g14dw7chk8n964mv21', 27, '18/12/20', '08:48:34', 117248, 'doc');
+INSERT INTO `files` VALUES (1459, 'nombres IAPI.doc', 'j060f2h8vie80x966s41354082rc8j8b276rug0q', 6, '12/12/20', '14:03:45', 26112, 'doc');
+INSERT INTO `files` VALUES (1149, 'Para imprimir.rar', '9pm893c4j4o80s6r6808zrm079u9u2rk75x1l42y', 6, '01/10/20', '11:56:52', 305382, 'rar');
+INSERT INTO `files` VALUES (1404, '1.doc', 'c53q8jxr98cu087twz522c1e894d5f19asbi9e80', 27, '07/12/20', '08:54:31', 46080, 'doc');
+INSERT INTO `files` VALUES (1403, 'Nota individual Vacaciones.doc', '92iqo27zk07l3jeszvto1gg76k300a81j8o81619', 6, '07/12/20', '08:39:06', 31232, 'doc');
+INSERT INTO `files` VALUES (1731, 'ENERO-MARZO.xls', '3555z3971518td1o37q6v0hyw9x1gc29s201a2bn', 36, '14/05/20', '11:26:11', 550400, 'xls');
+INSERT INTO `files` VALUES (1804, 'Septiembre 2013.xls', 'uf49pg9u8624320r77gc9wop5kr8i0jqcqkrpwn7', 36, '16/07/20', '13:31:03', 14848, 'xls');
+INSERT INTO `files` VALUES (1762, 'Atencion al publico.rar', '8b0s20sin108409a6mbrbgem3002e63q4vxmu24m', 9, '29/05/20', '13:08:03', 16201528, 'rar');
+INSERT INTO `files` VALUES (1985, 'Setiembre13-Diciembre 13.xls', 'a042ygwgg9566ad2yc57wz3z144551p47zl1qp7o', 9, '06/01/20', '09:37:31', 150016, 'xls');
+INSERT INTO `files` VALUES (1976, 'MAPA.bmp', 'l09jb0245134r9zbe371u1p4gx1qi42575nwja83', 12, '17/12/20', '09:14:22', 1986934, 'bmp');
+INSERT INTO `files` VALUES (1977, 'Libro1.xls', 'b5r364e67352e9r0py158f7s54gen34tn7z1iird', 12, '17/12/20', '11:55:52', 14848, 'xls');
+INSERT INTO `files` VALUES (1978, 'Datos TV 2013 CORREGIDO 29-10-13.xls', '8v7wm93bx6o6xmf21j0un08y6dgmjmdcjvf6kx17', 7, '20/12/20', '12:36:46', 1082368, 'xls');
+INSERT INTO `files` VALUES (1402, 'Nota Personal Vacaciones.doc', '031weqh500p9m475dp638ewxi9h03sop515fx086', 6, '07/12/20', '08:36:21', 106496, 'doc');
+INSERT INTO `files` VALUES (1885, 'AnyVideoConverter Portable.rar', 'v0p3l16q13e36fxd765w2j9g71v01699bq973y62', 2, '17/09/20', '09:42:58', 23974205, 'rar');
+INSERT INTO `files` VALUES (1725, 'MACRO FORMATO LINEA.txt', 'f6224mtw1455b24ywr08i439g38131lz3ovi0i7y', 2, '13/05/20', '09:28:12', 1097, 'txt');
+INSERT INTO `files` VALUES (1557, 'Aerolíneas Argentinas.htm', 'la7897ibzjj9ln6g09974491n752yp2vmta5x9ne', 27, '18/01/20', '10:36:49', 33562, 'htm');
+INSERT INTO `files` VALUES (1296, 'LA PAZ.rar', '363392331dr5q9g51p7dorx14z42ri22zjz7b93t', 6, '20/11/20', '11:39:33', 36647962, 'rar');
+INSERT INTO `files` VALUES (1611, 'Asignación de Turno del Nuevo DNI y.doc', 'r8h0a870cw99r5k3n6z03x4wxdo4ya0o23505804', 27, '04/02/20', '12:10:29', 34816, 'doc');
+INSERT INTO `files` VALUES (1952, 'Datos TV 2013 CORREGIDO 29-10-13.xls', 'fx2gmcn0q9ohmce7ujb3g50o6iuhsl1h2stg98kz', 7, '28/11/20', '14:17:29', 1079808, 'xls');
+INSERT INTO `files` VALUES (1438, 'coronel, angela maria.doc', 'c2qfjr7w7l8ra2r38w0vca5r44er6amqn3h272i3', 27, '11/12/20', '09:42:02', 116736, 'doc');
+INSERT INTO `files` VALUES (1612, 'requisitos_DNI.txt', '4xkr39hm5l2ouc1ssrord9k18qj9mm18w255utkt', 27, '04/02/20', '12:10:34', 6004, 'txt');
+INSERT INTO `files` VALUES (1613, 'Sanchez Pablo - Informe Social.doc', 'r77h63afzt0ilt6481528olm3809x6h3j8t5me21', 6, '04/02/20', '12:49:01', 78336, 'doc');
+INSERT INTO `files` VALUES (1868, 'Promocion 1er programa.jpg', '625fg8ai72s67ciu126pq44u934evvklb50333fq', 7, '04/09/20', '09:32:56', 700449, 'jpg');
+INSERT INTO `files` VALUES (1813, 'Datos TV 2013 CORREGIDO 25-07-13.xls', '2177p628u1676l44w3lm154737g818nti4baqi54', 7, '25/07/20', '11:28:44', 884224, 'xls');
+INSERT INTO `files` VALUES (1812, 'Control de Asistencia  Actualizadoal día.xlsx', 'yz39853nkby8429uvv00dp02e2637roz54qyi459', 7, '25/07/20', '10:39:01', 316298, 'xlsx');
+INSERT INTO `files` VALUES (1814, 'Datos TV 2013 CORREGIDO 25-07-13.xls', '09qa6i7er2au7mi5ttk23v962l743ko423bk81c9', 7, '25/07/20', '11:29:32', 884224, 'xls');
+INSERT INTO `files` VALUES (1712, 'Abril.rar', '3cw60l2432pbx3q3p5dadlw8gwo5rpy9f387p88r', 6, '08/05/20', '07:17:42', 40290, 'rar');
+INSERT INTO `files` VALUES (1815, 'Curso para nuevas manzaneras.rar', '58mr81o2j1289pk22gr318vsi2r140w44a2389m6', 39, '26/07/20', '09:49:45', 17553, 'rar');
+INSERT INTO `files` VALUES (1973, 'Datos TV 2013 CORREGIDO 29-10-13.xls', '9s154300599xygn8izlpm959e9n61od416eb8z3g', 7, '11/12/20', '15:25:21', 1080320, 'xls');
+INSERT INTO `files` VALUES (1974, 'mandalas.pdf', 'mn6pk5fnzh2cxrmdy3tj807n3o232695h9601k13', 2, '12/12/20', '10:11:24', 1369538, 'pdf');
+INSERT INTO `files` VALUES (932, 'TARJETAS SIN RETIRAR NOVIEMBRE.xlsx', '8dvoo6775aqtj0jfx3698vg6a1xbd1j9w4j1096h', 7, '03/08/20', '08:13:01', 28888, 'xlsx');
+INSERT INTO `files` VALUES (1923, 'Padron 23-10-13.xls', '3ulto9a584pqd9x5ygs21172m3u5r557m68o6238', 12, '24/10/20', '09:31:10', 13696512, 'xls');
+INSERT INTO `files` VALUES (1709, 'Datos TV 2013.xls', '9kg7511586e4vrfh1z9u5hd6s45r5aypqy0dwv51', 7, '07/05/20', '10:09:29', 782336, 'xls');
+INSERT INTO `files` VALUES (1816, 'Curso para nuevas manzaneras.rar', 'qr493us091e8z4nx34nb69xav6mpm2xnkra5j4nj', 39, '26/07/20', '09:50:02', 17553, 'rar');
+INSERT INTO `files` VALUES (1867, 'Sy_Ve_Portable.rar', '0q298sv6r03l22k021we5445wx80x3yjk4jge9x3', 2, '04/09/20', '09:00:41', 63727547, 'rar');
+INSERT INTO `files` VALUES (1244, 'para hablar.docx', 't7rqnh36v89yl12ib885kus4isko5i787k496rj5', 6, '07/11/20', '13:04:19', 13365, 'docx');
+INSERT INTO `files` VALUES (1950, 'PADRON 28-11-2013.xls', '6ozef8233q3i5n988396u7ck2pazvpnblm3470i8', 39, '28/11/20', '08:50:00', 7965696, 'xls');
+INSERT INTO `files` VALUES (1948, 'Copia de Quilmes_Jub-1.xls', 'w9e08155g162vsi8262gjqf084ycmw1c0qs8fm29', 40, '27/11/20', '08:56:36', 615936, 'xls');
+INSERT INTO `files` VALUES (1657, 'operativos marzo.doc', '5573102s13l222e7hnf998g6cb0n384j4y0x2c6x', 24, '08/03/20', '13:38:07', 24576, 'doc');
+INSERT INTO `files` VALUES (1894, 'JUBILACION ACTUALIZADO.xls', 'kgms81xyrs5q65g54363w0ou62s7p8vu3ksvu70n', 6, '24/09/20', '08:49:49', 83456, 'xls');
+INSERT INTO `files` VALUES (1986, 'Diciembre 2013.xls', '6ssb58l1a25h86yiqt29hjd9mg51zcc1o6ot97t7', 5, '06/01/20', '11:36:24', 3905536, 'xls');
+INSERT INTO `files` VALUES (1137, 'Villalba Margarita.doc', 'boce1b1t24mq0495i81euma3g9g83c5izp6582i3', 29, '28/09/20', '09:33:02', 116224, 'doc');
+INSERT INTO `files` VALUES (1667, 'Altas Plan Nacional de Seguridad Alimentaria - 1er envío - 12-03-13.xls', 'u06zelzr9kou8611p9nj90jg6s465rmdgs35pnp7', 29, '21/03/20', '09:21:35', 264704, 'xls');
+INSERT INTO `files` VALUES (1012, 'ENo5.rar', '3l1s5hu3z76mpllt0199du0w6xi113qr686cr1ef', 2, '04/09/20', '09:00:00', 53289216, 'rar');
+INSERT INTO `files` VALUES (1151, 'MacroColores.txt', '806p8jog3q32do83y9q2nqq8p2n69506j29jn2bt', 2, '02/10/20', '11:05:44', 1572, 'txt');
+INSERT INTO `files` VALUES (1937, 'Barrios Emilce  14 años Embarazada.doc', 's69l7e133d2bc2w2v2vug982dzupfe23h204bbap', 12, '18/11/20', '10:16:21', 24064, 'doc');
+INSERT INTO `files` VALUES (1572, 'WinRAR 3.71 instalador.exe', 'z837663r1hns246r6xngd3vgm5jkki8l630dajt2', 2, '23/01/20', '10:51:36', 2314044, 'exe');
+INSERT INTO `files` VALUES (1571, 'Instalacion.rar', 'k22gr318vsi2r140w44a2389m6qr493us091e8z4', 2, '23/01/20', '10:36:12', 75004910, 'rar');
+INSERT INTO `files` VALUES (1585, 'es_office_professional_plus_2010_x86_volume_license.part07.rar', 'q791j2vpv53v7p1q9ce7etawd348op3i2hg1w1b0', 32, '25/01/20', '09:27:39', 52428800, 'rar');
+INSERT INTO `files` VALUES (1584, 'es_office_professional_plus_2010_x86_volume_license.part06.rar', 'fo1179075u17ju1sw66mxh5v1i65kon2ksbsx59u', 32, '25/01/20', '09:27:30', 52428800, 'rar');
+INSERT INTO `files` VALUES (1558, 'Pri aero.rar', '1jmdl7k4jx7krql8b604j7lyg6h15ck79v55163h', 27, '18/01/20', '10:53:36', 2134634, 'rar');
+INSERT INTO `files` VALUES (1437, 'tp egci gerontologia.doc', 'w5dv2fo81q5rn668yz82237nfn15mg7xx2kn1j70', 27, '11/12/20', '09:35:53', 31744, 'doc');
+INSERT INTO `files` VALUES (1482, 'BENEFICIARIO.doc', '7a4p3269903g39c02wu2km1mp585p8u2c0p280ai', 27, '18/12/20', '08:36:03', 58368, 'doc');
+INSERT INTO `files` VALUES (1532, 'respaldo plan vida.rar', 'cr077i66tn5b8ajq95y1nyb258j86b6q5i7j1k3t', 2, '07/01/20', '08:33:37', 46477512, 'rar');
+INSERT INTO `files` VALUES (1600, 'ccd29_2013 reclamo tarjeta Diaz Bibiana.doc', '77ia9m24gvq8l4hzhg0on8m39a4c2575e1b44n16', 6, '28/01/20', '09:58:34', 55808, 'doc');
+INSERT INTO `files` VALUES (1581, 'es_office_professional_plus_2010_x86_volume_license.part03.rar', 'gu9v2a1cbf9dj0dswilq3vpp6fj3jh56iu7h34x9', 32, '25/01/20', '09:26:58', 52428800, 'rar');
+INSERT INTO `files` VALUES (1435, 'Anexo Evaluación Grupal Módulo 2.doc', '247yk782fg0blo90ullbbr179998h1427wonc98n', 27, '11/12/20', '09:32:08', 165376, 'doc');
+INSERT INTO `files` VALUES (917, 'ljP1000_P1500-HB-pnp-win32-es.exe', 'z05el453d919u40915a8z08p0rhv0fbjskxxxzo2', 2, '01/08/20', '09:50:04', 3430392, 'exe');
+INSERT INTO `files` VALUES (1436, 'Evaluacion Grupal módulo 2.doc', 'ccg0m0j7ar0345z7p59o0l65sw85264hllyladh8', 27, '11/12/20', '09:32:12', 81920, 'doc');
+INSERT INTO `files` VALUES (1545, 'GenerarEticket (1).jpg', 'o0w867930xcdlg19p5u6f4780v93x39848o2505d', 27, '09/01/20', '12:02:57', 314888, 'jpg');
+INSERT INTO `files` VALUES (1964, 'Setiembre13-Diciembre 13.xls', '6569710y398a2689hfu5cg3445440t6j877xigpu', 9, '04/12/20', '10:03:57', 159744, 'xls');
+INSERT INTO `files` VALUES (1228, 'contador.rar', '63s38n16094a92k131r995c9p1309shyv9oj959d', 2, '05/11/20', '08:12:19', 408219, 'rar');
+INSERT INTO `files` VALUES (1103, 'Quilmes_Banc_Sep (1).xls', '6e6vx8pim5tqda8qp95yp1ukx2e7he46l5l91f8j', 7, '25/09/20', '11:18:11', 3899904, 'xls');
+INSERT INTO `files` VALUES (1366, 'Informe de gestion 2012.doc', 'w2zhxp0hb9ms01egq7vs56eu56a2kjbyvp045dt6', 27, '04/12/20', '09:27:17', 160256, 'doc');
+INSERT INTO `files` VALUES (1631, 'Quilmes_Ene.xls', '7vkbuvkj146162wb02v90y2ml2z4xvrpg416f9al', 6, '14/02/20', '08:19:46', 3549184, 'xls');
+INSERT INTO `files` VALUES (1484, 'info vivienda Valle Leonor 18.12.12.doc', 'f2h8vie80x966s41354082rc8j8b276rug0q1mnu', 27, '18/12/20', '08:46:18', 121856, 'doc');
+INSERT INTO `files` VALUES (1863, 'AJUARES Marzo a Julio.xls', '2ooe8k763p27m86jz0y1677yg774l8w3c87ovk0r', 36, '02/09/20', '09:31:07', 737792, 'xls');
+INSERT INTO `files` VALUES (1617, 'listado de casos uregntes.doc', 'x63hb708xu4g2mgf8pd4m9x78egw6cznt4w48y5n', 27, '04/02/20', '13:39:14', 39936, 'doc');
+INSERT INTO `files` VALUES (1683, 'saucedo chaco II.doc', 'e9c219grr32uj9v4a37jj47ifzp0g6a22e78y3p3', 33, '09/04/20', '08:48:28', 1596928, 'doc');
+INSERT INTO `files` VALUES (1893, 'Padrón 19-09-2013.xls', '44229ip2403464d7g27t020390pekp20k57q5o8u', 9, '23/09/20', '09:12:04', 6736384, 'xls');
+INSERT INTO `files` VALUES (1345, 'Ali Alicia Norma.doc', 'v53v7p1q9ce7etawd348op3i2hg1w1b0h9m6e429', 27, '29/11/20', '08:42:52', 30208, 'doc');
+INSERT INTO `files` VALUES (1107, 'MacroSaltosDePagina.txt', 'o42870sp1g734798kjh7t7382uyyq1vtrp7008j4', 2, '26/09/20', '08:36:54', 1063, 'txt');
+INSERT INTO `files` VALUES (1787, 'Para paula.MSWMM', '96a1w63v860742v75im58mr81o2j1289pk22gr31', 9, '05/07/20', '11:51:50', 0, 'unk');
+INSERT INTO `files` VALUES (1544, 'GenerarEticket.jpg', '3i8830z5c6s029vbt6bk1o18j38009yuz8d8xzfy', 27, '09/01/20', '12:02:54', 314739, 'jpg');
+INSERT INTO `files` VALUES (1241, 'TeamViewer_Setup_es.exe', '9zepi13jsm3fv7awl70b30e5dqec7184vh7j19x5', 2, '06/11/20', '11:32:26', 3933368, 'exe');
+INSERT INTO `files` VALUES (1242, 'Alomo.rar', '7cmtjx971b4972qbaf386t2cj52my49v11c87l52', 6, '06/11/20', '12:44:02', 106677, 'rar');
+INSERT INTO `files` VALUES (1034, 'ProgramandoConSmalltalk-BORRADORFINAL07-Febrero-2006.pdf', '9997ko873blxjdp03obyx0mgx37u0342co447x5e', 2, '07/09/20', '09:34:21', 8762178, 'pdf');
+INSERT INTO `files` VALUES (1970, 'Respaldo TS dic-2013.part1.rar', '15jgo2q088ff91934v4g165sw49kg7511586e4vr', 2, '11/12/20', '08:34:10', 52428800, 'rar');
+INSERT INTO `files` VALUES (1971, 'Respaldo TS dic-2013.part2.rar', 'fh1z9u5hd6s45r5aypqy0dwv51y5i25tag5g48p7', 2, '11/12/20', '08:34:19', 5423009, 'rar');
+INSERT INTO `files` VALUES (1636, 'IntervencionPsicosocialEnCatastrofes2.pdf', '1ryma2pylbso189ax41dmn05673dbcw5od3q86k0', 29, '21/02/20', '12:30:58', 2863680, 'pdf');
+INSERT INTO `files` VALUES (1637, 'IntervencionSocialEnEmergenciasYCatastrofes.pdf', '749p81rab63bc664r8jy5c3il0ei15srmf61bx8m', 29, '21/02/20', '12:31:08', 2448421, 'pdf');
+INSERT INTO `files` VALUES (1638, 'temario_2012.02.21.docx', '6idn596gmgw40xszb6v4g29r3oz3d15338j27429', 29, '21/02/20', '12:41:06', 25667, 'docx');
+INSERT INTO `files` VALUES (1640, 'Modelo Nota de los Inquilinos.doc', '9p8f51nwzc4f0ck0o9dc23kctcx79949567i29q6', 27, '22/02/20', '11:30:53', 24064, 'doc');
+INSERT INTO `files` VALUES (1641, 'Acta LUNA.doc', '9n7711w2w7u97v26lh908u6x5eez512zikn78u8y', 27, '22/02/20', '11:31:12', 24576, 'doc');
+INSERT INTO `files` VALUES (1642, 'Encuesta Social LUNA.doc', '6ay3su5s69l7e133d2bc2w2v2vug982dzupfe23h', 27, '22/02/20', '11:31:23', 29184, 'doc');
+INSERT INTO `files` VALUES (1363, 'chapas noviembre final.doc', '05d8d225bj9q5tc7id4812sm786m97aq455q0e02', 27, '03/12/20', '09:06:42', 44032, 'doc');
+INSERT INTO `files` VALUES (1644, 'FINIQUITO.doc', 'zdarp41854llr6tf69v9fz3hep11goy1f5m0timq', 29, '26/02/20', '09:58:43', 36352, 'doc');
+INSERT INTO `files` VALUES (1556, 'Tarjeta de embarque.htm', '6o212nd888a64d64o2tw0zctszl82ao83xdm8hy5', 27, '18/01/20', '10:36:29', 42638, 'htm');
+INSERT INTO `files` VALUES (1200, 'faltantes.rar', '7ye869g2ua43076f00njs5v6602voi6p3077q029', 6, '19/10/20', '08:53:14', 55111, 'rar');
+INSERT INTO `files` VALUES (1205, 'Trata de personas 1, 2 y 3 parte.docx', 'qj3t288bf1apjdu03ju3cswz1x6wk60rou62iy2g', 29, '23/10/20', '10:56:01', 42584, 'docx');
+INSERT INTO `files` VALUES (1206, 'Trata de personas 1, 2 y 3 parte.doc', 'su23o1w9re1qv6ve746gec3s8m7gp3npckl51lhw', 29, '23/10/20', '10:57:53', 454536, 'doc');
+INSERT INTO `files` VALUES (1359, 'Nº.doc', '0x5zvz5hsr0n5ru497px77e5u2g1rb6l200edu1e', 27, '30/11/20', '08:41:08', 59904, 'doc');
+INSERT INTO `files` VALUES (1340, 'Birngas, Mariela.doc', '8mp2nntgysc8w9iubvf8ie4r37xd8gfyqmf8m155', 27, '29/11/20', '08:25:10', 118272, 'doc');
+INSERT INTO `files` VALUES (1588, 'es_office_professional_plus_2010_x86_volume_license.part10.rar', 'f17cmtjx971b4972qbaf386t2cj52my49v11c87l', 32, '25/01/20', '09:28:05', 52428800, 'rar');
+INSERT INTO `files` VALUES (1225, 'NOTAS.rar', '19p5u6f4780v93x39848o2505d9q632l6q2116vn', 6, '30/10/20', '13:57:46', 232885, 'rar');
+INSERT INTO `files` VALUES (1567, 'Vivienda2101.doc', 'nwzc4f0ck0o9dc23kctcx79949567i29q69n7711', 29, '22/01/20', '14:29:36', 36352, 'doc');
+INSERT INTO `files` VALUES (1355, 'ENCUESTA SEQUQEIRA.doc', '0539pvh4o892r5fz6m6k35f2k443p9hl67j2lr4l', 27, '29/11/20', '12:56:41', 127488, 'doc');
+INSERT INTO `files` VALUES (1239, 'FileZilla_3.5.3_win32-setup.exe', '4c472srqgu9v2a1cbf9dj0dswilq3vpp6fj3jh56', 2, '06/11/20', '10:04:27', 4518720, 'exe');
+INSERT INTO `files` VALUES (1240, 'FileZilla_Portable_3.1.0.1_.paf.exe', 'iu7h34x900qm23tnrczw1zc2i8u4z3w2xh0h84dk', 2, '06/11/20', '10:26:14', 3629792, 'exe');
+INSERT INTO `files` VALUES (1341, 'Caceres, Zulma.doc', '0c081z54po5ea6a72wq89c1ix0ixykw3s95haoe6', 27, '29/11/20', '08:27:47', 137216, 'doc');
+INSERT INTO `files` VALUES (1343, 'Torres barreto, rosalia.doc', 'nqq8p2n69506j29jn2btfe0418621yrv9gwb15y5', 27, '29/11/20', '08:29:26', 119808, 'doc');
+INSERT INTO `files` VALUES (1342, 'irrazabal, hector.doc', 'qv40fo0gp4xcn3p2609n806p8jog3q32do83y9q2', 27, '29/11/20', '08:29:14', 115712, 'doc');
+INSERT INTO `files` VALUES (1991, 'dieta bolumen.doc', '431pi8yvm7wipvq94w038o8g46s5bz48k28yf1o5', 9, '17/01/20', '13:18:19', 38912, 'doc');
+INSERT INTO `files` VALUES (1987, 'Datos TV 2013 CORREGIDO 07-01-14.xls', 'uztw5kt82w5s5d72eyfh9bsm5295ugqk4u5pd6na', 7, '07/01/20', '10:48:30', 1053696, 'xls');
+INSERT INTO `files` VALUES (1988, 'DICIEMBRE.xls', 'vd1b491z96i00u4941i5yqr5hwf726674q8486on', 5, '09/01/20', '12:37:18', 1736192, 'xls');
+INSERT INTO `files` VALUES (1990, 'Quilmes_Ene14 CORREGIDO.mdb', 'tz1q7g33k1r1olvrx95t1g60227lsruokf32b6hd', 39, '17/01/20', '08:57:18', 9576448, 'mdb');
+INSERT INTO `files` VALUES (1311, 'Ledesma Susana para ASU.doc', '3t4ivgdev1q802sye1d3076v379b8888j9evp658', 29, '27/11/20', '12:21:51', 84992, 'doc');
+INSERT INTO `files` VALUES (1819, 'Datos TV 2013 CORREGIDO 25-07-13.xls', 'm92612920uh4yfxv5h6gp714vji1bw8d903d357y', 39, '30/07/20', '09:12:54', 884736, 'xls');
+INSERT INTO `files` VALUES (1940, 'ASIGNACION UNIVERSAL.pdf', 'y76p41yu2j01h1q52h56u4m1to1y8fj681805gkz', 12, '19/11/20', '09:06:38', 469843, 'pdf');
+INSERT INTO `files` VALUES (1568, 'Vivienda2101.doc', '5s69l7e133d2bc2w2v2vug982dzupfe23h204bba', 29, '22/01/20', '14:30:13', 36352, 'doc');
+INSERT INTO `files` VALUES (1614, 'Sanchez Pablo - ASU.doc', 'ahm96zgtgai2me31cdg386plo5gh859poijcl7io', 6, '04/02/20', '12:49:20', 78336, 'doc');
+INSERT INTO `files` VALUES (1591, 'es_office_professional_plus_2010_x86_volume_license.part13.rar', '4kebk2e7885cou9r293i603uq76uuz0cyjklw6iq', 32, '25/01/20', '09:28:30', 52428800, 'rar');
+INSERT INTO `files` VALUES (1590, 'es_office_professional_plus_2010_x86_volume_license.part12.rar', '8e42dm9rl94d44mlz592tbl4m7wrzk8rzshg24u1', 32, '25/01/20', '09:28:22', 52428800, 'rar');
+INSERT INTO `files` VALUES (1497, 'asu salado.doc', 'v25081so85h96d9y97p25z8r1s495qht45zxp131', 27, '18/12/20', '15:53:48', 110592, 'doc');
+INSERT INTO `files` VALUES (1498, 'asu santos andrea.doc', 'zl3rr6ig9at954kmd5y6o212nd888a64d64o2tw0', 27, '18/12/20', '15:53:52', 116736, 'doc');
+INSERT INTO `files` VALUES (1499, 'asu salado.doc', 'zctszl82ao83xdm8hy5la7897ibzjj9ln6g09974', 27, '18/12/20', '15:53:56', 110592, 'doc');
+INSERT INTO `files` VALUES (1500, 'asu santos andrea.doc', '491n752yp2vmta5x9ne995nh5tg8k9efiy010k55', 27, '18/12/20', '15:54:02', 116736, 'doc');
+INSERT INTO `files` VALUES (1589, 'es_office_professional_plus_2010_x86_volume_license.part11.rar', '48k8c6oz2cb65zsr90170036568a47k7g08n7hzc', 32, '25/01/20', '09:28:14', 52428800, 'rar');
+INSERT INTO `files` VALUES (1818, 'Curriculum vitae.horacio 1.doc', '1mrc645ti7lp80bj0f1v59ns1x8tr99t7vok2g3n', 9, '29/07/20', '11:55:36', 308736, 'doc');
+INSERT INTO `files` VALUES (1882, 'Downloads.rar', 'inxqhu93x85s853n9415wlq4k2qbi590jge32y14', 9, '11/09/20', '10:38:01', 3850360, 'rar');
+INSERT INTO `files` VALUES (1954, 'Datos TV 2013 CORREGIDO 29-10-13.xls', 'ow35321epc1fx2gmcn0q9ohmce7ujb3g50o6iuhs', 7, '28/11/20', '14:18:30', 1079808, 'xls');
+INSERT INTO `files` VALUES (1759, 'Datos TV 2013 mod.xls', 'rc645ti7lp80bj0f1v59ns1x8tr99t7vok2g3n8y', 7, '28/05/20', '09:05:27', 895488, 'xls');
+INSERT INTO `files` VALUES (1790, 'Datos TV 2013 CORREGIDO.xls', 'jc37i95583q279mo7qu2n0h190t8q2x24n50cokb', 36, '10/07/20', '13:08:43', 914432, 'xls');
+INSERT INTO `files` VALUES (1775, 'Calendario.xls', '43qm0i6r97ue7husj740lyk0u5n2c3m41ab5730f', 36, '25/06/20', '13:56:23', 14848, 'xls');
+INSERT INTO `files` VALUES (1776, 'NOTA SOLANO.doc', '5ad4x29fc84h8844ytoo0k629532l9ml2hvmbk11', 7, '02/07/20', '13:32:53', 24576, 'doc');
+INSERT INTO `files` VALUES (1777, 'NOTA SOLANO.doc', 'j295378018l9nbm01isy838mj8r345y382jg27s7', 7, '02/07/20', '13:33:32', 24576, 'doc');
+INSERT INTO `files` VALUES (1936, 'Padron 18-11-2013.xls', '2w7u97v26lh908u6x5eez512zikn78u8y6ay3su5', 39, '18/11/20', '09:02:02', 7150592, 'xls');
+INSERT INTO `files` VALUES (1846, 'Factura01905507051736.gif', 'fmfy9a018j0d73tph70222q9k52k4573g8t54206', 9, '15/08/20', '13:08:30', 3682, 'gif');
+INSERT INTO `files` VALUES (1847, 'Factura01904830410584.gif', '68ef237w98r83xrtd45m1b971psgwu58bj2d4dmz', 9, '15/08/20', '13:08:45', 3762, 'gif');
+INSERT INTO `files` VALUES (1848, 'bookmarks_20_08_13.html', '7r1u710w64101g119jyx841b6i6j97a5q414jdsr', 2, '20/08/20', '07:50:54', 10911, 'html');
+INSERT INTO `files` VALUES (1933, 'Link descarga.txt', 'rj8n6gw207gouts1m9bu9zagv7j2ayuoei19060c', 9, '11/11/20', '11:48:41', 836, 'txt');
+INSERT INTO `files` VALUES (1895, 'JUBILACION.xls', '57664zgyeh6eo34c2bn41a5zw0k4e875x22d7y78', 6, '24/09/20', '08:50:09', 81408, 'xls');
+INSERT INTO `files` VALUES (1901, 'Datos TV 2013 CORREGIDO 25-07-13.xls', 'u31qj171006anrw0pv0aagxqns2qw9ttu6g807lm', 9, '25/09/20', '12:28:18', 990720, 'xls');
+INSERT INTO `files` VALUES (1908, 'Imprimir.xls', 'ep11goy1f5m0timqrr76s3a860a0donwb6gdb0yo', 39, '02/10/20', '13:05:37', 19456, 'xls');
+INSERT INTO `files` VALUES (1909, 'Firefox Setup Stub 24.0.exe', '3z8qole8y7572671f9l7634j2657t54698x75fqv', 2, '03/10/20', '07:55:38', 281944, 'exe');
+INSERT INTO `files` VALUES (1920, 'Growing Object Oriented Software Guided by Tests (2009) traduccion.doc', '01y9uas220qg31m568y9y08dbmv968tb5y32nm2i', 2, '17/10/20', '11:44:24', 423424, 'doc');
+
+-- --------------------------------------------------------
+
+-- 
+-- Estructura de tabla para la tabla `file_permission`
+-- 
+
+CREATE TABLE `file_permission` (
+  `file_id` int(6) NOT NULL,
+  `user_id` int(3) NOT NULL,
+  PRIMARY KEY (`file_id`,`user_id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
+
+-- 
+-- Volcar la base de datos para la tabla `file_permission`
+-- 
+
+INSERT INTO `file_permission` VALUES (171, 6);
+INSERT INTO `file_permission` VALUES (377, 19);
+INSERT INTO `file_permission` VALUES (433, 21);
+INSERT INTO `file_permission` VALUES (436, 3);
+INSERT INTO `file_permission` VALUES (441, 3);
+INSERT INTO `file_permission` VALUES (933, 6);
+INSERT INTO `file_permission` VALUES (1009, 8);
+INSERT INTO `file_permission` VALUES (1009, 13);
+INSERT INTO `file_permission` VALUES (1101, 1);
+INSERT INTO `file_permission` VALUES (1102, 1);
+INSERT INTO `file_permission` VALUES (1103, 1);
+INSERT INTO `file_permission` VALUES (1200, 1);
+INSERT INTO `file_permission` VALUES (1242, 10);
+INSERT INTO `file_permission` VALUES (1244, 10);
+INSERT INTO `file_permission` VALUES (1296, 1);
+INSERT INTO `file_permission` VALUES (1402, 1);
+INSERT INTO `file_permission` VALUES (1402, 7);
+INSERT INTO `file_permission` VALUES (1402, 8);
+INSERT INTO `file_permission` VALUES (1402, 10);
+INSERT INTO `file_permission` VALUES (1402, 13);
+INSERT INTO `file_permission` VALUES (1403, 1);
+INSERT INTO `file_permission` VALUES (1403, 7);
+INSERT INTO `file_permission` VALUES (1403, 8);
+INSERT INTO `file_permission` VALUES (1403, 13);
+INSERT INTO `file_permission` VALUES (1459, 7);
+INSERT INTO `file_permission` VALUES (1567, 24);
+INSERT INTO `file_permission` VALUES (1568, 24);
+INSERT INTO `file_permission` VALUES (1600, 10);
+INSERT INTO `file_permission` VALUES (1613, 7);
+INSERT INTO `file_permission` VALUES (1614, 7);
+INSERT INTO `file_permission` VALUES (1628, 1);
+INSERT INTO `file_permission` VALUES (1628, 7);
+INSERT INTO `file_permission` VALUES (1628, 8);
+INSERT INTO `file_permission` VALUES (1628, 10);
+INSERT INTO `file_permission` VALUES (1628, 13);
+INSERT INTO `file_permission` VALUES (1631, 1);
+INSERT INTO `file_permission` VALUES (1631, 7);
+INSERT INTO `file_permission` VALUES (1631, 8);
+INSERT INTO `file_permission` VALUES (1631, 10);
+INSERT INTO `file_permission` VALUES (1631, 13);
+INSERT INTO `file_permission` VALUES (1666, 24);
+INSERT INTO `file_permission` VALUES (1683, 34);
+INSERT INTO `file_permission` VALUES (1709, 8);
+INSERT INTO `file_permission` VALUES (1712, 1);
+INSERT INTO `file_permission` VALUES (1712, 7);
+INSERT INTO `file_permission` VALUES (1712, 8);
+INSERT INTO `file_permission` VALUES (1712, 36);
+INSERT INTO `file_permission` VALUES (1712, 37);
+INSERT INTO `file_permission` VALUES (1712, 38);
+INSERT INTO `file_permission` VALUES (1731, 5);
+INSERT INTO `file_permission` VALUES (1812, 39);
+INSERT INTO `file_permission` VALUES (1815, 36);
+INSERT INTO `file_permission` VALUES (1846, 37);
+INSERT INTO `file_permission` VALUES (1846, 39);
+INSERT INTO `file_permission` VALUES (1847, 37);
+INSERT INTO `file_permission` VALUES (1847, 39);
+INSERT INTO `file_permission` VALUES (1864, 6);
+INSERT INTO `file_permission` VALUES (1865, 1);
+INSERT INTO `file_permission` VALUES (1867, 6);
+INSERT INTO `file_permission` VALUES (1882, 7);
+INSERT INTO `file_permission` VALUES (1887, 5);
+INSERT INTO `file_permission` VALUES (1923, 36);
+INSERT INTO `file_permission` VALUES (1923, 38);
+INSERT INTO `file_permission` VALUES (1923, 39);
+INSERT INTO `file_permission` VALUES (1931, 12);
+INSERT INTO `file_permission` VALUES (1933, 12);
+INSERT INTO `file_permission` VALUES (1936, 12);
+INSERT INTO `file_permission` VALUES (1936, 36);
+INSERT INTO `file_permission` VALUES (1936, 38);
+INSERT INTO `file_permission` VALUES (1937, 1);
+INSERT INTO `file_permission` VALUES (1940, 5);
+INSERT INTO `file_permission` VALUES (1942, 5);
+INSERT INTO `file_permission` VALUES (1950, 36);
+INSERT INTO `file_permission` VALUES (1950, 38);
+INSERT INTO `file_permission` VALUES (1951, 12);
+INSERT INTO `file_permission` VALUES (1954, 5);
+INSERT INTO `file_permission` VALUES (1973, 5);
+INSERT INTO `file_permission` VALUES (1973, 6);
+INSERT INTO `file_permission` VALUES (1973, 12);
+INSERT INTO `file_permission` VALUES (1973, 36);
+INSERT INTO `file_permission` VALUES (1973, 38);
+INSERT INTO `file_permission` VALUES (1973, 39);
+INSERT INTO `file_permission` VALUES (1973, 40);
+INSERT INTO `file_permission` VALUES (1973, 41);
+INSERT INTO `file_permission` VALUES (1974, 5);
+INSERT INTO `file_permission` VALUES (1976, 5);
+INSERT INTO `file_permission` VALUES (1977, 38);
+INSERT INTO `file_permission` VALUES (1978, 5);
+INSERT INTO `file_permission` VALUES (1978, 6);
+INSERT INTO `file_permission` VALUES (1978, 12);
+INSERT INTO `file_permission` VALUES (1978, 36);
+INSERT INTO `file_permission` VALUES (1978, 38);
+INSERT INTO `file_permission` VALUES (1978, 39);
+INSERT INTO `file_permission` VALUES (1978, 40);
+INSERT INTO `file_permission` VALUES (1978, 41);
+INSERT INTO `file_permission` VALUES (1983, 41);
+INSERT INTO `file_permission` VALUES (1984, 7);
+INSERT INTO `file_permission` VALUES (1985, 7);
+INSERT INTO `file_permission` VALUES (1986, 7);
+INSERT INTO `file_permission` VALUES (1986, 9);
+INSERT INTO `file_permission` VALUES (1986, 12);
+INSERT INTO `file_permission` VALUES (1986, 36);
+INSERT INTO `file_permission` VALUES (1986, 38);
+INSERT INTO `file_permission` VALUES (1986, 39);
+INSERT INTO `file_permission` VALUES (1986, 40);
+INSERT INTO `file_permission` VALUES (1986, 41);
+INSERT INTO `file_permission` VALUES (1987, 5);
+INSERT INTO `file_permission` VALUES (1987, 9);
+INSERT INTO `file_permission` VALUES (1987, 36);
+INSERT INTO `file_permission` VALUES (1987, 40);
+INSERT INTO `file_permission` VALUES (1987, 41);
+INSERT INTO `file_permission` VALUES (1990, 5);
+INSERT INTO `file_permission` VALUES (1990, 6);
+INSERT INTO `file_permission` VALUES (1990, 7);
+INSERT INTO `file_permission` VALUES (1990, 9);
+INSERT INTO `file_permission` VALUES (1990, 12);
+INSERT INTO `file_permission` VALUES (1990, 36);
+INSERT INTO `file_permission` VALUES (1990, 38);
+INSERT INTO `file_permission` VALUES (1990, 40);
+INSERT INTO `file_permission` VALUES (1990, 41);
+INSERT INTO `file_permission` VALUES (1991, 40);
+
+-- --------------------------------------------------------
+
+-- 
+-- Estructura de tabla para la tabla `users`
+-- 
+
+CREATE TABLE `users` (
+  `user_id` int(3) NOT NULL AUTO_INCREMENT,
+  `user_name` varchar(20) COLLATE utf8_spanish_ci NOT NULL,
+  `user_pass` varchar(15) COLLATE utf8_spanish_ci NOT NULL,
+  `user_nick` varchar(35) COLLATE utf8_spanish_ci NOT NULL,
+  `user_p1` int(1) NOT NULL,
+  `user_p2` int(1) NOT NULL,
+  `user_p3` int(1) NOT NULL,
+  `user_ses_id` int(6) NOT NULL,
+  `chat_nombre` varchar(16) COLLATE utf8_spanish_ci NOT NULL,
+  PRIMARY KEY (`user_id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci AUTO_INCREMENT=42 ;
+
+-- 
+-- Volcar la base de datos para la tabla `users`
+-- 
+
+INSERT INTO `users` VALUES (2, 'alejandro', 'nada', 'Alejandro David Castro', 1, 1, 1, 920431, 'Ale');
+INSERT INTO `users` VALUES (3, 'jimena', '123456', 'Jimena Eliana Martinez', 0, 0, 0, 413879, 'Jime');
+INSERT INTO `users` VALUES (4, 'pamelav', '123456', 'Pamela Anabel Viva', 0, 0, 0, 987365, 'PameV');
+INSERT INTO `users` VALUES (5, 'pamelab', '30371293', 'Pamela Benczearki', 0, 0, 0, 105960, 'PameB');
+INSERT INTO `users` VALUES (6, 'claudiap', '010311', 'Claudia Panizza', 0, 0, 0, 555493, 'ClauP');
+INSERT INTO `users` VALUES (7, 'eugeniab', '123456', 'Eugenia Bellocq', 0, 0, 0, 625256, 'EugeB');
+INSERT INTO `users` VALUES (9, 'horacio', '123456', 'Horacio Garcia Perez', 0, 0, 0, 783184, 'Don H');
+INSERT INTO `users` VALUES (12, 'marcos', 'marckytos1703', 'Marcos Stuer', 0, 0, 0, 409841, 'Marcos');
+INSERT INTO `users` VALUES (14, 'gustavo', '123456', 'Gustavo Vega', 0, 0, 0, 140155, 'Gusti');
+INSERT INTO `users` VALUES (15, 'mariela', '123456', 'Mariela Carabes', 0, 0, 0, 600399, 'Mari');
+INSERT INTO `users` VALUES (16, 'carlos', '123456', 'Carlos Saucedo', 0, 0, 0, 130816, 'TuAmor');
+INSERT INTO `users` VALUES (33, 'diego', '123456', 'Diego Alderete', 0, 0, 0, 201403, 'Diego');
+INSERT INTO `users` VALUES (18, 'samanta', '123456', 'Monica Samanta Fernandez', 0, 0, 0, 532723, 'Samy');
+INSERT INTO `users` VALUES (19, 'valeriad', '123456', 'Valeria Dal Bianco', 0, 0, 0, 768902, 'ValeDB');
+INSERT INTO `users` VALUES (20, 'juan', '123456', 'Juan Jose Aranda', 0, 0, 0, 456321, 'Juanjo');
+INSERT INTO `users` VALUES (21, 'narela', '123456', 'Narela Villalba', 0, 0, 0, 862808, 'Nare');
+INSERT INTO `users` VALUES (23, 'ariel', '123456', 'Ariel Perez Vazquez', 0, 0, 0, 616247, 'Ariel');
+INSERT INTO `users` VALUES (24, 'melisa', '123456', 'Melisa Paola Gomez', 0, 0, 0, 599191, 'Mell');
+INSERT INTO `users` VALUES (25, 'marcia', 'palorami', 'Marcia Trindade', 0, 0, 0, 354086, 'Marcia');
+INSERT INTO `users` VALUES (32, 'soft', 'nada', 'Software', 1, 1, 1, 940921, 'Soft');
+INSERT INTO `users` VALUES (27, 'priscila', '123456', 'Priscila Sanz', 0, 0, 0, 561755, 'Pri');
+INSERT INTO `users` VALUES (28, 'stella', '123456', 'Stella Benitez', 0, 0, 0, 453924, 'Stella');
+INSERT INTO `users` VALUES (29, 'valeria', '123456', 'Maria Valeria Branca', 0, 0, 0, 763436, 'Vale');
+INSERT INTO `users` VALUES (30, 'soledad', '123456', 'Maria Soledad Mohr', 0, 0, 0, 894915, 'Sole');
+INSERT INTO `users` VALUES (34, 'andrea', '123456', 'Andrea Orduna', 0, 0, 0, 523330, 'Andre');
+INSERT INTO `users` VALUES (35, 'leticia', '123456', 'Leticia Farignon', 0, 0, 0, 965695, 'Leti');
+INSERT INTO `users` VALUES (36, 'pamelam', 'roman888', 'Pamela Mateos', 0, 0, 0, 721551, 'PameM');
+INSERT INTO `users` VALUES (40, 'ezequiel', '123456', 'Ezequiel Arias', 1, 0, 0, 588671, 'Eze');
+INSERT INTO `users` VALUES (38, 'yamila', '123456', 'Yamila Belen Leguizamon', 0, 0, 0, 123, '');
+INSERT INTO `users` VALUES (39, 'ary', '123456', 'Ary Gomez', 0, 0, 0, 657199, 'Ari');
+INSERT INTO `users` VALUES (41, 'soledadb', '123456', 'Soledad Burtoli', 0, 0, 0, 368450, 'Sole');

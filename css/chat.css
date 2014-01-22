@@ -1,0 +1,134 @@
+#frameChat, #frameChatOut{
+background: url(../images/light-black-bg.png) repeat;
+width: 220px;
+border: 1px solid #0F0;
+margin: 10px auto;
+padding: 10px;
+}
+
+#frameChatOut p{
+color: #0F0;
+text-align: center;
+}
+
+.frm{
+padding: 0px 0px 0px 2px;
+background-color: none;
+height: 240px;
+width: 215px;
+border: 1px solid green;
+}
+
+.bas{
+background-color:green;
+border-left: 1px solid green;
+color: blue;
+height: 240px;
+width: 14px;
+float: right;
+}
+
+.mov{
+background-color: #0F0;
+border: solid 1px #000;
+height: 48px;
+width: 12px;
+float: right;
+margin-top: 0px;
+}
+
+.scrllOut{
+padding: 5px;
+background-color: none;
+margin: 0px;
+float: right;
+height:230px;
+color: black;
+width: 190px;
+overflow:hidden;
+}
+.scrllI{
+
+background-color: none;
+padding-right: 8px;
+margin: 0px;
+float: right;
+height: 252px;
+width: 205px;
+margin-right: -22px;
+overflow:scroll;
+}
+
+.scrllI p{
+font-size: 12px;
+color: #fff;
+padding: 0px;
+margin: 0px;
+background-color: none;
+}
+
+#frameField{
+width: 215px;
+margin: 10px auto;
+height: auto;
+}
+
+#comentario{
+resize: none;
+}
+
+#frameEnd{
+width: 178px;
+height: 5px;
+clear: both;
+}
+
+#frameChat img{
+    height: 30px;
+	width: 30px;
+	padding: 0px;
+	margin: 5px 5px 0px 5px;
+	border: 1px solid #000;
+	background-color: #555;
+	float: left; 
+}
+
+#frameChat br{
+}
+
+.contenedor{
+	width: 190px;
+	padding: 0px;
+	margin: 0px;
+	border-top: 1px solid #555;
+    background-color: none;
+	float: left;
+	overflow: hidden;
+}
+
+.contenedorL{
+	width: 42px;
+	padding: 0px 0px 10px 0px;
+	margin: 0px;
+    background-color: none;
+	float: left;
+	overflow: hidden;
+}
+
+.contenedorL p{
+	padding: 0px;
+	padding-top: 3px;
+	margin: 0px;
+	text-align: center;	
+}
+
+.contenedorR{
+	width: 133px;
+	padding: 10px 10px 5px 5px;
+	margin: 0px;
+    background-color: none;
+	float: right;
+	overflow: hidden;
+}
+
+

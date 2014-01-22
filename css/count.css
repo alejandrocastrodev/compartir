@@ -1,0 +1,39 @@
+
+#changePass{
+    width: 700px;
+	height: auto;
+	background-color: none;
+	margin: 0px auto;	
+	padding: 0px;
+	border: 0px;
+	margin-top: 15px;
+}
+
+#count{
+margin-bottom: 30px;
+
+}
+
+#changePass a{
+    float: left;
+    font-weight: bold;
+	display: block;
+	height: 30px;
+	width: 129px;	
+	line-height: 30px;
+	color: #BCBDBD;
+	text-decoration: none;
+	font-family: arial, verdana, sans-serif;
+	text-align: center;
+	cursor: pointer;
+	font-size: 14px;
+	margin: 5px 0px;
+	padding: 0px;
+	border: 1px solid blue;	
+	background: url(../images/purple-bg.png) repeat;
+}
+
+#changePass a:hover{
+    background-color: #515;
+	color:#fff;
+}

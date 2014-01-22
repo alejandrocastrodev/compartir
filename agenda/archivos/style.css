@@ -1,0 +1,91 @@
+*{
+	margin: 0px;
+}
+
+body {
+    background-color: #aff;
+    padding: 0px;
+    border: 0px;
+    margin: 0px auto;
+	width: 700px;
+}
+
+
+#false-body{
+	height: auto;
+	background-color: none;
+	margin: 0px auto;
+	padding: 0px;
+	border: 0px;	
+}
+
+
+#table1{
+    width: 700px;
+    float: left;
+	clear: both;
+	height: auto;
+	background-color: none;
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+	color: black;
+	margin-top: 15px;
+    font-weight: bold;
+}
+
+
+#cargar_persona_form{
+    width: 700px;
+	height: auto;
+	background-color: none;
+	margin: 0px auto;	
+	padding: 0px;
+	border: 0px;
+}
+
+#link{
+	margin: 0px auto;
+    width: 200px;
+}
+
+#link a{
+    text-decoration: none;
+	color: #a4f;
+    font-weight: bold;
+	font-family: arial;
+	clear: both;
+	float: left;
+}
+
+#link a:hover{
+    text-decoration: none;
+	color: black;
+	clear: both;
+	float: left;
+}
+
+#box_multi_t, #box_multi_c{
+width: 320px;
+}
+
+#empty{
+    border: 1px blue solid;
+	color: blue;
+}
+
+
+#datoFrame {
+    border: 1px blue solid;
+}
+
+#datoFrame p {
+    color: red;
+	text-indent: 10px;
+	font-weight: none;
+}
+
+#datoFrame input {
+    float: right;
+    color: red;
+}
